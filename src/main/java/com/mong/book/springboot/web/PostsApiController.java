@@ -1,7 +1,5 @@
 package com.mong.book.springboot.web;
 
-
-import com.mong.book.springboot.web.domain.posts.PostsRepository;
 import com.mong.book.springboot.web.dto.PostsListResponseDto;
 import com.mong.book.springboot.web.dto.PostsResponseDto;
 import com.mong.book.springboot.web.dto.PostsSaveRequestDto;
