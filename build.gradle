@@ -4,6 +4,15 @@ plugins { // (1)
     id 'java'
 }
 
+jar {
+    enabled = false
+}
+manifest {
+    attributes(
+            'Main-Class': 'com.mong.book.springboot.Application'
+    )
+}
+
 group 'com.jojoldu.book'
 version '1.0.4-SNAPSHOT-'+new Date().format("yyyyMMddHHmmss")
 sourceCompatibility = 1.8
