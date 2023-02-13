@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mong.book.springboot.web.IndexControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-13T06:09:57" hostname="Mong-MacBookPro.local" time="0.175">
+  <properties/>
+  <testcase name="메인페이지_로딩()" classname="com.mong.book.springboot.web.IndexControllerTest" time="0.175"/>
+  <system-out><![CDATA[2023-02-13 15:09:53.933  INFO 18956 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.mong.book.springboot.web.IndexControllerTest], using SpringBootContextLoader
+2023-02-13 15:09:53.933  INFO 18956 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.mong.book.springboot.web.IndexControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2023-02-13 15:09:53.934  INFO 18956 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.mong.book.springboot.web.IndexControllerTest]: IndexControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-02-13 15:09:53.935  INFO 18956 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.mong.book.springboot.Application for test class com.mong.book.springboot.web.IndexControllerTest
+2023-02-13 15:09:53.938  INFO 18956 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2023-02-13 15:09:53.938  INFO 18956 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@73c7571, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@188a78b2, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@41cf2702, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@21bff3ef, org.springframework.test.context.support.DirtiesContextTestExecutionListener@45cc8d54, org.springframework.test.context.transaction.TransactionalTestExecutionListener@ec822b7, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3607e35b, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@68794eff, org.springframework.test.context.event.EventPublishingTestExecutionListener@49fec889, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@66c869b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@f78a036, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2dd41990, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@12d13623, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@70eb32bc, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@3a585587, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@374dc3c5]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.4.1)
+
+2023-02-13 15:09:53.965  INFO 18956 --- [    Test worker] c.m.b.s.web.IndexControllerTest          : Starting IndexControllerTest using Java 1.8.0_361 on Mong-MacBookPro.local with PID 18956 (started by mong in /Users/mong/Desktop/springboot2withaws)
+2023-02-13 15:09:53.966  INFO 18956 --- [    Test worker] c.m.b.s.web.IndexControllerTest          : No active profile set, falling back to default profiles: default
+2023-02-13 15:09:54.206  INFO 18956 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-13 15:09:54.247  INFO 18956 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 2 JPA repository interfaces.
+2023-02-13 15:09:54.590  INFO 18956 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-02-13 15:09:54.600  INFO 18956 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-13 15:09:54.600  INFO 18956 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2023-02-13 15:09:54.677  INFO 18956 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-13 15:09:54.678  INFO 18956 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 710 ms
+2023-02-13 15:09:54.868  INFO 18956 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-13 15:09:55.034  INFO 18956 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-13 15:09:55.102  INFO 18956 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-13 15:09:55.147  INFO 18956 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2023-02-13 15:09:55.192  INFO 18956 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-13 15:09:55.304  INFO 18956 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-02-13 15:09:55.952  INFO 18956 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-13 15:09:55.959  INFO 18956 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-13 15:09:56.404  WARN 18956 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-13 15:09:56.693  INFO 18956 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5a6bb8ba, org.springframework.security.web.context.SecurityContextPersistenceFilter@606d99f3, org.springframework.security.web.header.HeaderWriterFilter@17b9a72b, org.springframework.security.web.authentication.logout.LogoutFilter@4cd02927, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@1e305db1, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@7e554046, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3fe6f34e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3991e319, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@27db0791, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d017cbe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@25d0ec4f, org.springframework.security.web.session.SessionManagementFilter@124a0df5, org.springframework.security.web.access.ExceptionTranslationFilter@2fed139c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4414e1b7]
+2023-02-13 15:09:56.785  INFO 18956 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-02-13 15:09:56.812  INFO 18956 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-02-13 15:09:57.054  INFO 18956 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 57754 (http) with context path ''
+2023-02-13 15:09:57.068  INFO 18956 --- [    Test worker] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2023-02-13 15:09:57.074  INFO 18956 --- [    Test worker] c.m.b.s.web.IndexControllerTest          : Started IndexControllerTest in 3.134 seconds (JVM running for 6.237)
+2023-02-13 15:09:57.170  INFO 18956 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-13 15:09:57.171  INFO 18956 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-02-13 15:09:57.171  INFO 18956 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+body = <!DOCTYPE HTML>
+<html>
+<head>
+    <title>스프링부트 웹서비스</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<h1>스프링부트로 시작하는 웹 서비스 Ver.2</h1>
+<div class="col-md-12">
+    <div class="row">
+        <div class="col-md-6">
+            <a href="/posts/save" role="button" class="btn btn-primary">글 등록</a>
+                <a href="/oauth2/authorization/google" class="btn btn-success active" role="button">Google Login</a>
+                <a href="/oauth2/authorization/naver" class="btn btn-secondary active" role="button">Naver Login</a>
+        </div>
+    </div>
+    <br>
+    <!-- 목록 출력 영역 -->
+    <table class="table table-horizontal table-bordered">
+        <thead class="thead-strong">
+        <tr>
+            <th>게시글번호</th>
+            <th>제목</th>
+            <th>작성자</th>
+            <th>최종수정일</th>
+        </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!--index.js 추가-->
+<script src="/js/app/index.js"></script>
+</body>
+</html>
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

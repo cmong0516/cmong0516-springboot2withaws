@@ -1,14 +1,15 @@
 package com.mong.book.springboot.web;
 
 import org.assertj.core.api.Assertions;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
-import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.context.junit.jupiter.SpringExtension
+;
 
-@RunWith(SpringRunner.class)
+@ExtendWith(SpringExtension.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class IndexControllerTest {
 
@@ -29,7 +30,7 @@ public class IndexControllerTest {
     }
 }
 
-// SpringRunner 가 뭐임 ??
+// SpringExtension 가 뭐임 ??
 // - SpringBootTest 만 쓰면 무거운 프로젝트로서의 역할을 할수도 있다.
-// - SpringRunner.class 로 지정하면 @Autowired , @MockBean 등 필
+// - SpringExtension.class 로 지정하면 @Autowired , @MockBean 등 필
 // 요로 하는 요소만 컨텍스트가 (스프링이)관리해서 가볍게 테스트를 돌릴수 있다.
