@@ -1,10 +1,10 @@
+com/mong/book/springboot/web/HelloControllerTest.java
+ com.mong.book.springboot.web.HelloControllerTest
+com/mong/book/springboot/domain/posts/PostsRepositoryTest.java
+ com.mong.book.springboot.domain.posts.PostsRepositoryTest
 com/mong/book/springboot/web/dto/HelloResponseDtoTest.java
  com.mong.book.springboot.web.dto.HelloResponseDtoTest
 com/mong/book/springboot/web/PostsApiControllerTest.java
  com.mong.book.springboot.web.PostsApiControllerTest
-com/mong/book/springboot/web/HelloControllerTest.java
- com.mong.book.springboot.web.HelloControllerTest
 com/mong/book/springboot/web/IndexControllerTest.java
  com.mong.book.springboot.web.IndexControllerTest
-com/mong/book/springboot/domain/posts/PostsRepositoryTest.java
- com.mong.book.springboot.domain.posts.PostsRepositoryTest

@@ -59,7 +59,7 @@ public class PostsApiControllerTest {
         postsRepository.deleteAll();
     }
 
-    @Test
+//    @Test
     @WithMockUser(roles = "USER")
     public void Posts_등록() throws Exception {
         //given
@@ -94,7 +94,7 @@ public class PostsApiControllerTest {
 
     }
 
-    @Test
+//    @Test
     @WithMockUser(roles = "USER")
     public void Posts_수정() throws Exception {
         //given

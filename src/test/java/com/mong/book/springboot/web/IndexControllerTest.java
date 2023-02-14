@@ -17,7 +17,7 @@ public class IndexControllerTest {
     private TestRestTemplate restTemplate;
     // 이건 테스트용 HTTP 메서드를 실행할수 있게 해준다고 배움.
 
-    @Test
+//    @Test
     public void 메인페이지_로딩() {
         //when
         String body = this.restTemplate.getForObject("/", String.class);

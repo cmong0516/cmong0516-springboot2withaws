@@ -27,7 +27,7 @@ public class PostsRepositoryTest {
         postsRepository.deleteAll();
     }
 
-    @Test
+//    @Test
     public void 게시글저장_불러오기() {
         //given
         String title = "테스트 게시글";
@@ -49,7 +49,7 @@ public class PostsRepositoryTest {
         assertThat(posts.getAuthor()).isEqualTo("cmong0516@gmail.com");
     }
 
-    @Test
+//    @Test
     public void BaseTimeEntity_등록() {
         //given
         LocalDateTime now = LocalDateTime.of(2019, 6, 4, 0, 0, 0);

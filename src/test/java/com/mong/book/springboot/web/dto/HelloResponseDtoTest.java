@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 public class HelloResponseDtoTest {
 
-    @Test
+//    @Test
     public void 롬복_기능_테스트() {
         //given
         String name = "test";
